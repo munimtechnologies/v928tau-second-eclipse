@@ -1,0 +1,12 @@
+# Predicted eclipse-core midpoints from 2026-12 to 2027-12 for the period families still allowed (implied_period_ranges.csv, primary rule).
+# core_mid_bjd = 2457835.00625 (K2 core mid) + q * 979.7419 d, q = k/n; half_width_d = q * 0.0737 (from the ZTF timing constraint).
+# Assumes the repeat has the K2 core length (0.204 d); the full dip lasts about half a day. UTC from BJD without the ~few-minute barycentric correction.
+q,families_n,core_mid_bjd,half_width_d,core_mid_utc,sky
+3.625,8,2461386.571,0.27,2026-12-12 01:42,night sky near opposition
+3.6667,3;6;12,2461427.393,0.27,2027-01-21 21:26,evening sky
+3.75,4;8;12,2461509.038,0.28,2027-04-13 12:55,near the Sun
+3.8,5,2461558.026,0.28,2027-06-01 12:37,behind the Sun
+3.8333,6;12,2461590.717,0.28,2027-07-04 05:12,dawn
+3.875,8,2461631.506,0.29,2027-08-14 00:09,dawn
+3.9167,12,2461672.329,0.29,2027-09-23 19:54,morning sky
+4.0,1;2;3;4;5;6;8;12,2461753.974,0.30,2027-12-14 11:22,night sky

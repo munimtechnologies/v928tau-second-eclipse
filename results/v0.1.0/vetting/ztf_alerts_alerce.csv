@@ -1,0 +1,16 @@
+# ZTF alert-stream (difference imaging) detections of V928 Tau = ALeRCE object ZTF19aamthse, 2019-11-01 .. 2019-12-31, plus the non-detection rows in the same window.
+# Source: https://api.alerce.online/ztf/v1/objects/ZTF19aamthse/detections and .../non_detections, queried 2026-11-25 by hand (WebFetch).
+# isdiffpos -1 = the star was fainter than in the reference image. fid 1 = g, 2 = r. drb = deep real-bogus score (1 = real).
+# frame_note: from the IRSA PSF catalogue of the same frame (ztf_comparison_stars.csv and the IRSA queries cited there).
+kind,mjd,fid,isdiffpos,magpsf,sigmapsf,diffmaglim,drb,frame_note
+detection,58806.35738,1,1,18.7916,0.18948,,,normal frame
+non_detection,58806.38565,1,,,,20.0789,,normal frame
+detection,58811.27008,1,-1,17.879221,0.12365,,0.9813,catflags 32768; comparison stars 0.13-0.15 mag faint (bad frame)
+detection,58811.28884,1,-1,16.263676,0.03879,,0.9997,catflags 32768; comparison stars 0.73-0.83 mag faint (bad frame)
+non_detection,58811.31792,2,,,,19.8687,,normal frame
+non_detection,58811.33362,2,,,,19.918,,normal frame
+non_detection,58812.25822,2,,,,20.444,,normal frame
+non_detection,58814.21375,2,,,,19.9921,,catflags 0; PSF catalogue shows V928 Tau 0.278 mag faint, comparisons normal (no r alert: unexplained)
+detection,58814.27081,1,-1,16.523666,0.05110,,0.9993,catflags 0; PSF catalogue shows V928 Tau 0.305 mag faint, comparisons normal
+detection,58819.23288,1,-1,16.928875,0.05424,,0.9999,catflags 32768; comparison stars 0.29-0.40 mag faint (bad frame)
+non_detection,58819.27002,2,,,,17.9753,,catflags 32768

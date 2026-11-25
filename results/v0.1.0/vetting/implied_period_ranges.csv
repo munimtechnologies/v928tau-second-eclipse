@@ -1,0 +1,21 @@
+# Periods implied if the 2019-11-27 ZTF dip is a repeat of the K2 eclipse core (GRADING.md section 3).
+# K2 core: BJD 2457834.90409 - 2457835.10841 (out/results.json core). ZTF dip points: BJD 2458814.71959, 2458814.72049, 2458814.77665.
+# All three inside one shifted core => elapsed time D in [2458814.77665 - 2457835.10841, 2458814.71959 - 2457834.90409] = [979.6682, 979.8155] d. P = D / n.
+# allowed_* = share of [P_lo, P_hi] covered by allowed runs in out/allowed_periods_all.csv (primary rule) and out/allowed_periods_all_one_point_veto.csv; read by hand, grid-limited (approximate).
+n,P_lo,P_hi,allowed_primary,allowed_one_point,status
+1,979.6682,979.8155,1.00,1.00,allowed
+2,489.8341,489.9078,1.00,0.54,allowed
+3,326.5561,326.6052,1.00,0.37,allowed
+4,244.9171,244.9539,1.00,0.55,allowed
+5,195.9336,195.9631,0.42,0.00,partly allowed
+6,163.2780,163.3026,1.00,0.13,allowed
+7,139.9526,139.9736,0.00,0.00,excluded
+8,122.4585,122.4769,0.62,0.05,partly allowed
+9,108.8520,108.8684,0.00,0.00,excluded
+10,97.9668,97.9816,0.00,0.00,excluded
+11,89.0607,89.0741,0.00,0.00,excluded
+12,81.6390,81.6513,0.57,0.00,partly allowed
+13,75.3591,75.3704,0.00,0.00,excluded
+14,69.9763,69.9868,0.00,0.00,excluded
+15,65.3112,65.3210,0.00,0.00,excluded
+16,61.2293,61.2385,0.00,0.00,excluded

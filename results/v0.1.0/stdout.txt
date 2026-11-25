@@ -1,0 +1,68 @@
+===== setup-01-pip: pip install -r requirements.txt
+Collecting numpy (from -r requirements.txt (line 1))
+  Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting astropy (from -r requirements.txt (line 2))
+  Downloading astropy-8.0.3-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting astropy-iers-data>=0.2026.10.19.0.52.1 (from astropy->-r requirements.txt (line 2))
+  Downloading astropy_iers_data-0.2026.11.23.0.35.53-py3-none-any.whl.metadata (3.2 kB)
+Collecting packaging>=25.0 (from astropy->-r requirements.txt (line 2))
+  Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyerfa>=2.0.1.3 (from astropy->-r requirements.txt (line 2))
+  Downloading pyerfa-2.0.1.5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+Collecting PyYAML>=6.0.0 (from astropy->-r requirements.txt (line 2))
+  Downloading pyyaml-6.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.3 kB)
+Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 7.8 MB/s eta 0:00:00
+Downloading astropy-8.0.3-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 7.5 MB/s eta 0:00:00
+Downloading astropy_iers_data-0.2026.11.23.0.35.53-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 6.0 MB/s eta 0:00:00
+Downloading packaging-26.4-py3-none-any.whl (140 kB)
+Downloading pyerfa-2.0.1.5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (738 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 738.7/738.7 kB 4.3 MB/s eta 0:00:00
+Downloading pyyaml-6.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (849 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.2/849.2 kB 6.3 MB/s eta 0:00:00
+Installing collected packages: PyYAML, packaging, numpy, astropy-iers-data, pyerfa, astropy
+Successfully installed PyYAML-6.0.4 astropy-8.0.3 astropy-iers-data-0.2026.11.23.0.35.53 numpy-2.5.5 packaging-26.4 pyerfa-2.0.1.5
+
+===== run-01-python: python -m unittest -v test_v928
+
+===== run-02-python: python job.py --data-dir /data --out-dir /out
+[    0.6s] K2 C13: 423360 bytes
+[    1.4s] K2 C13: 3646 pts, scatter 0.0195, detections 1, best 0.216@2457835.00
+[    1.4s] G1 K2_EVENT_RECOVERED; core 2457834.904..2457835.108 (measured, 0.20 d)
+[   17.9s] ZTF points used: 1066
+fetched io_tess.py (3661 bytes) from commit 9dfda1bfbe
+fetched asassn_io.py (7343 bytes) from commit 9dfda1bfbe
+fetched ecl.py (12197 bytes) from commit 9dfda1bfbe
+Welcome to ASAS-SN Skypatrol!
+
+Current Deployment Version: 0.6.20 (11 SEPTEMBER 2025)
+Please upgrade your client if not up to date.
+
+New major release coming for Skypatrol. 
+We are rebuilding our catalogs and lightcurves in full.
+The API will remain the same, but asas_sn_ids will change for some targets.
+
+Kyle Hart 
+03 November 2026
+
+Downloading Curves...
+Pulled 1 of 1
+[   58.6s] ASAS-SN 240518765123 (rank 0, 0.0"): 905 rows
+[   58.6s] ASAS-SN points used: 778
+[   61.9s] TESScut sector 43: tess-s0043-3-4_68.078683_24.374087_11x11_astrocut.fits
+[   62.2s] TESS sector 43: 3395 pts, scatter 0.0085, share 0.61, detections 0, injection {'depth_in_aperture': 0.18301916304667068, 'n_covered': 10, 'n_recovered': 10}
+[   65.0s] TESScut sector 44: tess-s0044-2-3_68.078683_24.374087_11x11_astrocut.fits
+[   65.2s] TESS sector 44: 3261 pts, scatter 0.0081, share 0.63, detections 0, injection {'depth_in_aperture': 0.18852825305017054, 'n_covered': 10, 'n_recovered': 10}
+[   71.4s] TESScut sector 70: tess-s0070-4-4_68.078683_24.374087_11x11_astrocut.fits
+[   72.2s] TESS sector 70: 10695 pts, scatter 0.0142, share 0.63, detections 0, injection {'depth_in_aperture': 0.18998248389489203, 'n_covered': 8, 'n_recovered': 8}
+[   77.5s] TESScut sector 71: tess-s0071-2-2_68.078683_24.374087_11x11_astrocut.fits
+[   77.9s] TESS sector 71: 10529 pts, scatter 0.0158, share 0.66, detections 0, injection {'depth_in_aperture': 0.1991458298563775, 'n_covered': 8, 'n_recovered': 8}
+[   78.0s] ground dip points 4, ground events 2 (strong 1), TESS events 0 (strong 0)
+[   78.1s] scan grid: 609092 trials
+[  105.8s] scan k2_only: excluded 13684 / 609092 (0.022), 66 d-2.8 yr 0.001, 3 allowed runs
+[  130.9s] scan all: excluded 250143 / 609092 (0.411), 66 d-2.8 yr 0.515, 2900 allowed runs
+[  159.5s] scan new_only: excluded 250060 / 609092 (0.411), 66 d-2.8 yr 0.515, 2912 allowed runs
+[  180.3s] scan all_one_point_veto: excluded 329553 / 609092 (0.541), 66 d-2.8 yr 0.681, 3854 allowed runs
+[  180.3s] OUTCOME SECOND_ECLIPSE_CANDIDATE G1=K2_EVENT_RECOVERED G2=BOUND_REPRODUCED excluded_all=0.411 excluded_all_66d_2p8yr=0.515 excluded_k2_only=0.022

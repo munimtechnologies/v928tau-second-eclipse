@@ -1,0 +1,19 @@
+# ZTF PSF-catalogue photometry, field 609 CCD 7 quadrant 4, around the 2019-11-27 dip of V928 Tau (oid 609207400009260 r, 609107400004994 g).
+# Source: IRSA ZTF light-curve API, queried 2026-11-25 by hand (WebFetch):
+#  r: https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE%2068.078683%2024.374087%200.03&BANDNAME=r&FORMAT=csv&TIME=58795.0%2058840.0
+#  g: https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE%2068.078683%2024.374087%200.03&BANDNAME=g&FORMAT=csv&TIME=58805.0%2058834.0
+# local_median_mag = median of catflags=0 points in the query window, excluding the event night (r: 20 points per star, MJD 58795-58838; g: 9 points per star, MJD 58805-58833).
+# delta_mag = event mag - local median (positive = fainter). flux_ratio = 10^(-0.4 delta_mag). All event-night frames have catflags 0.
+oid,band,role,local_median_mag,event_mjd,event_mag,event_magerr,delta_mag,flux_ratio,limitmag
+609207400009260,r,target V928 Tau,13.10427,58814.21375,13.38262,0.0133,0.27835,0.7739,20.70
+609207400009260,r,target V928 Tau,13.10427,58814.21465,13.38386,0.0133,0.27959,0.7731,20.54
+609207400009341,r,comparison,14.46636,58814.21375,14.48604,0.0132,0.01968,0.9820,20.70
+609207400009341,r,comparison,14.46636,58814.21465,14.47140,0.0132,0.00504,0.9954,20.54
+609207400019549,r,comparison,14.95204,58814.21375,14.96863,0.0134,0.01659,0.9848,20.70
+609207400019549,r,comparison,14.95204,58814.21465,14.95596,0.0134,0.00392,0.9964,20.54
+609207400009293,r,comparison,17.10466,58814.21375,17.14144,0.0198,0.03678,0.9667,20.70
+609207400009293,r,comparison,17.10466,58814.21465,17.12373,0.0197,0.01907,0.9826,20.54
+609107400004994,g,target V928 Tau,15.00529,58814.27081,15.31060,0.0198,0.30531,0.7548,21.09
+609107400005040,g,comparison,15.69957,58814.27081,15.70016,0.0201,0.00059,0.9995,21.09
+609107400005017,g,comparison,16.73956,58814.27081,16.75484,0.0224,0.01528,0.9860,21.09
+609107400005013,g,comparison,19.11414,58814.27081,19.24176,0.0629,0.12762,0.8891,21.09
