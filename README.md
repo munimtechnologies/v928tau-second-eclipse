@@ -18,6 +18,9 @@ blind test using public K2, TESS, ZTF and ASAS-SN photometry.
 - It is a candidate, not a detection: two events cannot fix a period, and a different occulter is possible.
   The follow-up (Gaia DR4 on 2026-12-02 and the windows above) was fixed in advance in
   `AMENDMENT-2026-11-25-candidate.md`.
+- **2026-11-26:** the eight predicted windows that already passed (2025-10-21 .. 2026-11-01) all fell between
+  ZTF visits or in the seasonal gap, so they test nothing (`AMENDMENT-2026-11-26-past-windows.md`,
+  `GRADING-2026-11-26-past-windows.md`, `results/v0.1.0/vetting/past_windows_alerce.csv`).
 
 Details: `GRADING.md`. Outputs: `results/v0.1.0/`; hand vetting and predictions: `results/v0.1.0/vetting/`.
 
@@ -33,6 +36,7 @@ TESS has watched the star for about 100 days (2021 and 2023), and ZTF has kept i
 
 - `PREREGISTRATION.md`: the rules, fixed 2026-11-25 before any data were looked at
 - `GRADING.md`, `AMENDMENT-2026-11-25-candidate.md`: the graded result and the pre-registered follow-up
+- `AMENDMENT-2026-11-26-past-windows.md`, `GRADING-2026-11-26-past-windows.md`: the windows of 2025-10 .. 2026-11
 - `v928.py`: the core (standard library). It is adapted from munimtechnologies/epic2043-second-occultation
 - `job.py`: the pipeline. `python job.py --data-dir data --out-dir out`
 - `fetch_deps.py`: fetches io_tess.py and asassn_io.py, unchanged, from munimtechnologies/epic2202-second-eclipse

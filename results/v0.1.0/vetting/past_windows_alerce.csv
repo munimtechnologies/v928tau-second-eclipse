@@ -1,0 +1,13 @@
+# Windows already passed (2025-10 .. 2026-11) for the period families allowed by v0.1.0; graded under AMENDMENT-2026-11-26-past-windows.md.
+# Source: ZTF alert stream via ALeRCE, object ZTF19aamthse, https://api.alerce.online/ztf/v1/objects/ZTF19aamthse/detections and .../non_detections, queried 2026-11-26 ~05:40 UTC by hand (WebFetch). Alert data end MJD 61351.39 (2026-11-07).
+# window = predicted core, MJD, union over the family timing range D in [979.6682, 979.8155] d. nearest_before/after = closest ZTF alert-stream row of any band outside the window (+-0.10 d).
+q,families_n,window_mjd_lo,window_mjd_hi,g_rows_in_window,any_band_rows_in_window,nearest_before_mjd,nearest_after_mjd,label,note
+3.2,5,60969.342,60970.018,0,0,60948.441,60970.420,NOT_COVERED,"next row MJD 60970.420 is an r-band negative alert (magpsf 15.42, drb 0.55) 0.40 d after the window end: r band, below drb 0.9 and outside the window, so not counted (r-band difference photometry of this star is unreliable, GRADING.md section 2)"
+3.25,4;8;12,61018.326,61019.009,0,0,61017.27,61021.22,NOT_COVERED,
+3.3333,3;6;12,61099.965,61100.660,0,0,61099.218,61254.47,NOT_COVERED,"last row before the window is a g positive alert at MJD 61099.218 (0.75 d before); seasonal gap follows"
+3.375,8,61140.784,61141.486,0,0,61099.218,61254.47,NOT_COVERED,seasonal gap (Sun near Taurus)
+3.4,5,61165.276,61165.981,0,0,61099.218,61254.47,NOT_COVERED,seasonal gap
+3.4167,12,61181.637,61182.345,0,0,61099.218,61254.47,NOT_COVERED,seasonal gap
+3.5,2;4;6;8;12,61263.243,61263.963,0,0,61257.490,61264.485,NOT_COVERED,"next row MJD 61264.485 (i band, non-detection) is 0.52 d after the window end"
+3.5833,12,61344.882,61345.614,0,0,61340.455,61347.286,NOT_COVERED,"ZTF gap MJD 61340.45-61347.29"
+3.6,5,61361.210,61361.944,,,61351.394,,NOT_YET_AVAILABLE,"after the alert data end (2026-11-07); re-check when ALeRCE has data past MJD 61362"
